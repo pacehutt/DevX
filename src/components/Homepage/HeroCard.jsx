@@ -4,7 +4,7 @@ import Carousel from "./Carousel";
 const HeroCard = (child) => {
   return (
     <div className="heroCard">
-      <img className="cardSvg" src="public/assets/card.svg" alt="" />
+      <img className="cardSvg" src="/assets/card.svg" alt="" />
       <h1 className="cardTitle">HAPPENING IS SPASTRIAL</h1>
 
       <div className="cardContent">

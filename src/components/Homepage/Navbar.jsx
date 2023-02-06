@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navLogo">
-        <img src="public/assets/DeVx.svg" alt="" />
+        <img src="/assets/DeVx.svg" alt="" />
       </div>
 
       <div className="navOptions">

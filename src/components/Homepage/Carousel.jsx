@@ -18,16 +18,16 @@ const Carousel = () => {
   return (
     <Slider className="slider" {...settings}>
       <div>
-        <img src="public/assets/tech-companies.jpg" alt="" />
+        <img src="/assets/tech-companies.jpg" alt="" />
       </div>
       <div>
         <img
-          src="public/assets/tech_neoncircuitboard_857021704_medium_lc5h05.jfif"
+          src="/assets/tech_neoncircuitboard_857021704_medium_lc5h05.jfif"
           alt=""
         />
       </div>
       <div>
-        <img src="public/assets/three.jfif" alt="" />
+        <img src="/assets/three.jfif" alt="" />
       </div>
     </Slider>
   );
