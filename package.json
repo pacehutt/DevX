@@ -8,8 +8,6 @@
     "build": "vite build",
     "preview": "vite preview",
     "start": "npm run dev"
-    "predeploy" : "npm run build",
-"deploy" : "gh-pages -d build",
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
