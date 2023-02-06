@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+  background: #642B73;
+  background: -webkit-linear-gradient(to right, #C6426E, #642B73);
+  background: linear-gradient(to right, #C6426E, #642B73);
+
+
+  background: #C33764;
+  background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+  background: linear-gradient(to right, #1D2671, #C33764);
+
+}
+
+
+
+
+a {
+  text-decoration: none;
+  color: #c3bad3;
+}

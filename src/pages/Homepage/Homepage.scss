@@ -1,0 +1,296 @@
+// variables
+
+$font-oswald: "Oswald", sans-serif;
+$font-bebasNeue: "Bebas Neue", cursive;
+
+/* navbar */
+.navbar {
+  display: flex;
+  height: 6rem;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+
+  .navLogo {
+    justify-content: center;
+    flex: 1;
+
+    img {
+      height: 1.6rem;
+    }
+  }
+
+  .navOptions {
+    justify-content: center;
+    flex: 4;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 0.8rem;
+
+    a {
+      margin-right: 2.5rem;
+    }
+  }
+
+  .navAuth {
+    justify-content: center;
+    flex: 1;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 0.8rem;
+
+    button {
+      margin: 0 2rem;
+      padding: 0.7rem 1.7rem;
+      margin-right: 3rem;
+      font-size: 0.8rem;
+      border: none;
+      font-weight: bold;
+      border-radius: 30px;
+      background-color: #755e8e32;
+      box-shadow: inset 0 0 10px 5px #ca91a6;
+      text-transform: uppercase;
+      color: #c3bad3;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+  }
+}
+
+.hero {
+  background: transparent;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+
+  .headingContainer {
+    z-index: 1;
+    padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Bebas Neue", cursive;
+    width: 100%;
+
+    .lineOne {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      width: 60%;
+      // background-color: #755e8e;
+
+      h1 {
+        font-size: 12rem;
+        font-weight: 100;
+        font-family: "Bebas Neue", cursive;
+        color: white;
+        padding: 0;
+        line-height: 10rem;
+        text-rendering: 4px;
+        background-image: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0.442) 0%,
+          rgb(255, 255, 255) 30%
+        );
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.681);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .box {
+        margin: 2rem;
+        background-color: rgba(136, 136, 136, 0.186);
+        padding: 0.3rem 2rem;
+        font-size: 4rem;
+        border-radius: 13px;
+
+        font-weight: bold;
+        box-shadow: inset -1px 1px 1px 0px rgba(255, 255, 255, 0.553),
+          0 0 14px 0 rgb(31, 31, 31);
+        color: white;
+        line-height: 5rem;
+      }
+    }
+
+    .lineTwo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 60%;
+
+      h1 {
+        font-size: 12rem;
+        font-weight: lighter;
+        font-family: "Bebas Neue", cursive;
+        color: white;
+        line-height: 10rem;
+        background-image: linear-gradient(
+          to left,
+          rgba(255, 255, 255, 0.442) 0%,
+          rgba(255, 255, 255, 0.836) 30%
+        );
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.681);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .videoBtn {
+        // margin: 0 2rem;
+        margin-right: 5rem;
+        padding: 1rem 1.1rem;
+        font-size: 0.8rem;
+        border: none;
+        font-weight: bold;
+        border-radius: 70px;
+        background-color: rgba(255, 255, 255, 0.144);
+        box-shadow: inset 0 0 15px 2px rgba(255, 255, 255, 0.718);
+        text-transform: uppercase;
+        color: white;
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 2rem;
+          margin-right: 1rem;
+        }
+
+        h4 {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  .heroCard {
+    z-index: 2;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 400px;
+    width: 800px;
+
+    .cardSvg {
+      height: 100%;
+    }
+
+    .cardTitle {
+      position: absolute;
+      margin-left: -30rem;
+      text-align: center;
+      font-size: 0.7rem;
+      top: 40px;
+      color: white;
+      font-weight: 100;
+    }
+
+    .cardContent {
+      // background-color: red;
+      margin-top: 2 rem;
+      position: absolute;
+      display: flex;
+      // background-color: red;
+      height: 240px;
+      width: 90%;
+
+      .carousel {
+        .slider {
+          width: 220px;
+          height: 100%;
+
+          div {
+            border-radius: 5px;
+            overflow: hidden;
+            height: 100%;
+
+            position: relative;
+
+            img {
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+      }
+
+      .content {
+        padding: 2rem;
+        color: white;
+
+        h6 {
+          font-size: 0.8rem;
+          font-weight: 300;
+        }
+
+        h2 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 0.8rem;
+          margin-top: 1rem;
+          color: #c3bad3;
+        }
+
+        button {
+          padding: 0.7rem 1.7rem;
+          font-size: 0.8rem;
+          border: none;
+          border-radius: 5px;
+          background-color: #912f5b35;
+          box-shadow: inset 0 0 10px 1px #bf7499;
+          color: #e1dee6;
+          cursor: pointer;
+          white-space: nowrap;
+          margin-top: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+.textured-heading {
+  // font-size: 12rem;
+  font-weight: 100;
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  padding: 0;
+  line-height: 10rem;
+  text-rendering: 4px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgb(255, 255, 255) 80%
+  );
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.681);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+.slick-dots li button:before {
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+}
