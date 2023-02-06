@@ -40,9 +40,7 @@ const Homepage = () => {
             phrase={data.section1.phrase}
           />
         </Box>
-        <a id="faqs">
-          <FAQ />
-        </a>
+        <FAQ />
 
         <Footer></Footer>
       </Box>
